@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "EasyMapping",
+        "repositoryURL": "https://github.com/lucasmedeirosleite/EasyMapping",
+        "state": {
+          "branch": null,
+          "revision": "777897f4128173421ca02997d58f972f0fc7bc23",
+          "version": "0.24.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

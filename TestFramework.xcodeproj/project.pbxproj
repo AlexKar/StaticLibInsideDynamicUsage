@@ -21,7 +21,8 @@
 		739FD596276C775800FBC704 /* TestModel+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 739FD595276C775800FBC704 /* TestModel+Mapping.m */; };
 		739FD599276C785400FBC704 /* EKObjectMapping+MRUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 739FD597276C785400FBC704 /* EKObjectMapping+MRUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		739FD59A276C785400FBC704 /* EKObjectMapping+MRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 739FD598276C785400FBC704 /* EKObjectMapping+MRUtils.m */; };
-		739FD5A2276CBA6400FBC704 /* EasyMapping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739FD57E276C752B00FBC704 /* EasyMapping.framework */; };
+		AC0F810728159CD200121731 /* EasyMapping in Frameworks */ = {isa = PBXBuildFile; productRef = AC0F810628159CD200121731 /* EasyMapping */; };
+		AC0F81092815D7CD00121731 /* EasyMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = AC0F81082815D7CD00121731 /* EasyMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		739FD595276C775800FBC704 /* TestModel+Mapping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TestModel+Mapping.m"; sourceTree = "<group>"; };
 		739FD597276C785400FBC704 /* EKObjectMapping+MRUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EKObjectMapping+MRUtils.h"; sourceTree = "<group>"; };
 		739FD598276C785400FBC704 /* EKObjectMapping+MRUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EKObjectMapping+MRUtils.m"; sourceTree = "<group>"; };
+		AC0F81082815D7CD00121731 /* EasyMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyMapping.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				739FD5A2276CBA6400FBC704 /* EasyMapping.framework in Frameworks */,
+				AC0F810728159CD200121731 /* EasyMapping in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +100,7 @@
 				739FD563276C74F000FBC704 /* TestFramework */,
 				739FD585276C754600FBC704 /* Shared */,
 				739FD562276C74F000FBC704 /* Products */,
+				AC0F810528159CD200121731 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,8 +150,16 @@
 				739FD586276C754600FBC704 /* Shared.h */,
 				739FD597276C785400FBC704 /* EKObjectMapping+MRUtils.h */,
 				739FD598276C785400FBC704 /* EKObjectMapping+MRUtils.m */,
+				AC0F81082815D7CD00121731 /* EasyMapping.h */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		AC0F810528159CD200121731 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +169,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0F81092815D7CD00121731 /* EasyMapping.h in Headers */,
 				739FD587276C754600FBC704 /* Shared.h in Headers */,
 				739FD599276C785400FBC704 /* EKObjectMapping+MRUtils.h in Headers */,
 			);
@@ -181,6 +193,8 @@
 				739FD589276C754600FBC704 /* PBXTargetDependency */,
 			);
 			name = TestFramework;
+			packageProductDependencies = (
+			);
 			productName = TestFramework;
 			productReference = 739FD561276C74F000FBC704 /* TestFramework.app */;
 			productType = "com.apple.product-type.application";
@@ -199,6 +213,9 @@
 			dependencies = (
 			);
 			name = Shared;
+			packageProductDependencies = (
+				AC0F810628159CD200121731 /* EasyMapping */,
+			);
 			productName = Shared;
 			productReference = 739FD584276C754600FBC704 /* Shared.framework */;
 			productType = "com.apple.product-type.framework";
@@ -229,6 +246,9 @@
 				Base,
 			);
 			mainGroup = 739FD558276C74F000FBC704;
+			packageReferences = (
+				AC0F810228159C6100121731 /* XCRemoteSwiftPackageReference "EasyMapping" */,
+			);
 			productRefGroup = 739FD562276C74F000FBC704 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -600,6 +620,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC0F810228159C6100121731 /* XCRemoteSwiftPackageReference "EasyMapping" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lucasmedeirosleite/EasyMapping";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC0F810628159CD200121731 /* EasyMapping */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC0F810228159C6100121731 /* XCRemoteSwiftPackageReference "EasyMapping" */;
+			productName = EasyMapping;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 739FD559276C74F000FBC704 /* Project object */;
 }

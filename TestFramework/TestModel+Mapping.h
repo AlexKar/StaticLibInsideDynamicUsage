@@ -5,8 +5,8 @@
 //  Created by alexander.senchenkov on 17.12.2021.
 //
 
-//#import <Shared/EKObjectMapping+MRUtils.h>
-#import <EasyMapping/EasyMapping.h>
+#import "TestModel.h"
+#import <Shared/Shared.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

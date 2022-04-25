@@ -6,8 +6,11 @@
 //
 
 #import "ViewController.h"
+#import "TestModel.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) TestModel *model;
 
 @end
 
@@ -16,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.model = [TestModel new];
 }
 
 
